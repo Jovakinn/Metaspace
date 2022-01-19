@@ -3,7 +3,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import {TypeOrmModule} from "@nestjs/typeorm";
 import { join } from 'path';
-import { ProductModule } from './product/product.module';
+import { ProductModule } from './product/modules/product.module';
 
 @Module({
   imports: [
@@ -12,7 +12,7 @@ import { ProductModule } from './product/product.module';
         host: 'localhost',
         port: 3306,
         username: 'root',
-        password: 'root',
+        password: 'Max05012004',
         database: 'my_db',
         entities: [join(__dirname, '**', '*.entity.{ts,js}')],
         synchronize: true,
