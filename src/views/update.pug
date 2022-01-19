@@ -1,0 +1,13 @@
+doctype html
+html
+    head
+        title New post
+    style
+    body
+        h1 New post
+        form(method="POST" action="/articles")
+            label Title:
+                input(type="text" name="title")
+            label Text:
+                input(type="textarea" name="content")
+            button(type="submit") Update
