@@ -5,6 +5,7 @@ import {TypeOrmModule} from "@nestjs/typeorm";
 import { join } from 'path';
 import { ProductModule } from './product/modules/product.module';
 import {ThrottlerModule} from "@nestjs/throttler";
+import {UserModule} from "./User/modules/user.module";
 
 @Module({
   imports: [
@@ -23,6 +24,7 @@ import {ThrottlerModule} from "@nestjs/throttler";
           limit: 500,
       }),
       ProductModule,
+      UserModule,
   ],
   controllers: [AppController],
   providers: [AppService],
